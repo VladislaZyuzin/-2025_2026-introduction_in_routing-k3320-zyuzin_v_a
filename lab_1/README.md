@@ -167,7 +167,14 @@ add disabled=no interface=br_v10
 ip link add link eth2 name vlan10 type vlan id 10
 ip addr add 10.10.10.10/24 dev vlan10
 ip link set vlan10 up
-udhcpc -i vlan10
+```
+
+Пример настройки `PC2`:
+```
+#!/bin/sh
+ip link add link eth2 name vlan20 type vlan id 20
+ip addr add 10.10.20.10/24 dev vlan20
+ip link set vlan20 up
 ```
 
 ### Пример работы
