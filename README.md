@@ -1,7 +1,7 @@
 # Введение в маршрутизацию 2025-2026
 [ITMO University](https://itmo.ru/ru/)
 
-* **Факультет:** [FPIN](https://fict.itmo.ru)
+* **Факультет:** [ФПиН](https://fict.itmo.ru)
 * **Курс:** [Введение в маршрутизацию](https://github.com/itmo-ict-faculty/introduction-in-routing)
 * **Год:** 2025/2026
 * **Группа:** K3320
