@@ -83,7 +83,8 @@ topology:
 
 Ниже можно ознакомиться с графическим представлением этой схемы (а также с разделением VLAN'ов):
 
-![Топология](<img width="688" height="601" alt="lab1_telecom drawio" src="https://github.com/user-attachments/assets/bc9bb4fc-e0da-4047-bd56-530a3e37be7d" />)
+
+<img width="688" height="601" alt="lab1_telecom drawio" src="https://github.com/user-attachments/assets/433a8ec0-8e3e-4356-b760-3dba01c52bdb" />
 
 
 
