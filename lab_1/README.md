@@ -33,29 +33,33 @@
 В файле `lab.yaml` описана топология сети. Она включает маршрутизатор `R1`, три коммутатора (`SW1`, `SW2`, `SW3`), а также два конечных устройства (`PC1` и `PC2`). Каждый узел имеет свой файл конфигурации (в папке `configs`, который загружается при старте контейнера.
 
 ```
-name: lab1
+name: lab_1
+
+mgmt:
+  network: static
+  ipv4-subnet: 192.168.10.0/24
 
 topology:
   nodes:
     R1:
       kind: vr-mikrotik_ros
-      image: vrnetlab/vr-routeros:6.47.9
-      mgmt-ipv4: 192.168.50.11
+      image: vrnetlab/mikrotik_routeros:6.47.9
+      mgmt-ipv4: 192.168.10.11
       startup-config: ./configs/r1.rsc
     SW1:
       kind: vr-mikrotik_ros
-      image: vrnetlab/vr-routeros:6.47.9
-      mgmt-ipv4: 192.168.50.12
+      image: vrnetlab/mikrotik_routeros:6.47.9
+      mgmt-ipv4: 192.168.10.12
       startup-config: ./configs/sw1.rsc
     SW2:
       kind: vr-mikrotik_ros
-      image: vrnetlab/vr-routeros:6.47.9
-      mgmt-ipv4: 192.168.50.13
+      image: vrnetlab/mikrotik_routeros:6.47.9
+      mgmt-ipv4: 192.168.10.13
       startup-config: ./configs/sw2.rsc
     SW3:
       kind: vr-mikrotik_ros
-      image: vrnetlab/vr-routeros:6.47.9
-      mgmt-ipv4: 192.168.50.14
+      image: vrnetlab/mikrotik_routeros:6.47.9
+      mgmt-ipv4: 192.168.10.14
       startup-config: ./configs/sw3.rsc
     PC1:
       kind: linux
@@ -75,9 +79,6 @@ topology:
     - endpoints: ["SW2:eth3", "PC1:eth2"]
     - endpoints: ["SW3:eth3", "PC2:eth2"]
 
-mgmt:
-  network: static
-  ipv4-subnet: 192.168.50.0/24
 ```
 
 Ниже можно ознакомиться с графическим представлением этой схемы (а также с разделением VLAN'ов):
