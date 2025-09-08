@@ -9,4 +9,4 @@
 
 ## Лабораторные работы
 
-* **Лабораторная работа №1:** ["Установка ContainerLab и развертывание тестовой сети связи"]()
+* **Лабораторная работа №1:** ["Установка ContainerLab и развертывание тестовой сети связи"](https://github.com/VladislaZyuzin/2025_2026-introduction_in_routing-k3320-zyuzin_v_a/tree/main/lab_1)
