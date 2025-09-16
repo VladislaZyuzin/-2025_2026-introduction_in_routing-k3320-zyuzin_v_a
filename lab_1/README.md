@@ -27,7 +27,21 @@
 
 ## Описание работы
 
-Для выполнения работы была арендована виртуальная машина в Selectel. На неё были установлены `docker`, `make` и `containerlab`, а также склонирован репозиторий `hellt/vrnetlab` (в папку routeros был загружен файл chr-6.47.9.vmdk). C помощью `make docker-image` был собран соответствуший образ.
+Для выполнения работы была создана ВМ в Virtual Box, далее, через хостовую ОС (в моём случае - Windows 10) был открыт cmd и внесены следующие скрипты:
+
+```cmd
+cd "C:\Program Files\Oracle\VirtualBox"
+
+VBoxManage modifyvm "ubuntu_vlad" --hwvirtex on
+VBoxManage modifyvm "ubuntu_vlad" --nestedpaging on  
+VBoxManage modifyvm "ubuntu_vlad" --paravirtprovider kvm
+VBoxManage modifyvm "ubuntu_vlad" --pae on
+```
+После введения скриптов на ВМ проверим, есть ли виртуализация: 
+```bash
+egrep -c '(vmx|svm)' /proc/cpuinfo
+```
+Далее на ВМ были установлены `docker`, `make` и `containerlab`, а также склонирован репозиторий `hellt/vrnetlab` (в папку routeros был загружен файл chr-6.47.9.vmdk). C помощью `make docker-image` был собран соответствуший образ.
 
 ### Топология 
 В файле `lab.yaml` описана топология сети. Она включает маршрутизатор `R1`, три коммутатора (`SW1`, `SW2`, `SW3`), а также два конечных устройства (`PC1` и `PC2`). Каждый узел имеет свой файл конфигурации (в папке `configs`, который загружается при старте контейнера.
