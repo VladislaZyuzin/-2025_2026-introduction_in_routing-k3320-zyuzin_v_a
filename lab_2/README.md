@@ -20,7 +20,8 @@
 * Настроить статическую маршрутизацию.
 * Настроить имена устройств, сменить логины и пароли.
 
-![Схема из задания](images/multisite.png)
+![Схема из задания](<img width="541" height="361" alt="image" src="https://github.com/user-attachments/assets/99929a67-daae-4ab6-abfb-fafe552f93ed" />
+)
 
 ## Описание работы
 
