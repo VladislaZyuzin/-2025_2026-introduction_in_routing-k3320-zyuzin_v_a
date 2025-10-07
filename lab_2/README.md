@@ -77,7 +77,7 @@ mgmt:
 
 Ниже можно ознакомиться с графическим представлением этой схемы:
 
-![Топология](<img width="562" height="510" alt="lab2-topology drawio" src="https://github.com/user-attachments/assets/cd75f0f9-b528-4500-a224-ec9108f5e099" />)
+
 <img width="562" height="510" alt="lab2-topology drawio" src="https://github.com/user-attachments/assets/a420fec7-a47f-49ac-9f20-d539cead097d" />
 
 
@@ -118,15 +118,15 @@ ip route del default via 192.168.50.1 dev eth0
 После настройки маршрутов и запуска контейнеров была проведена проверка. Результаты выводятся в командной строке маршрутизаторов и ПК.
 
 Команда `ip route print` на маршрутизаторе `R01` показала корректную таблицу маршрутизации:
-![Таблица маршрутизации для `R01`](<img width="1698" height="1046" alt="2025-10-06_17-05-39" src="https://github.com/user-attachments/assets/4a24bd57-9ee8-411f-855a-98a00942c307" />)
+<img width="1698" height="1046" alt="2025-10-06_17-05-39" src="https://github.com/user-attachments/assets/4a24bd57-9ee8-411f-855a-98a00942c307" />
 
 Аналогичным образом на маршрутизаторе `R02` была показана таблица маршрутизации: 
 
-![Таблица маршрутизации для `R02`](<img width="1474" height="1316" alt="2025-10-06_17-17-43" src="https://github.com/user-attachments/assets/0e95ffde-5a23-4298-adcc-1f8f32f745ac" />)
+<img width="1474" height="1316" alt="2025-10-06_17-17-43" src="https://github.com/user-attachments/assets/0e95ffde-5a23-4298-adcc-1f8f32f745ac" />
 
 
 Проверка командой ping с `PC1` до `PC2` и `PC3` показала успешное прохождение пакетов:
-![Ping PC1 -> PC2 и PC3](<img width="1158" height="411" alt="2025-10-06_17-15-11" src="https://github.com/user-attachments/assets/25eec961-8ec8-4fb8-b6aa-7b130f534773" />)
+<img width="1158" height="411" alt="2025-10-06_17-15-11" src="https://github.com/user-attachments/assets/25eec961-8ec8-4fb8-b6aa-7b130f534773" />
 
 ## Заключение
 
