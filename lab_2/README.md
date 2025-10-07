@@ -78,6 +78,7 @@ mgmt:
 Ниже можно ознакомиться с графическим представлением этой схемы:
 
 ![Топология](<img width="562" height="510" alt="lab2-topology drawio" src="https://github.com/user-attachments/assets/cd75f0f9-b528-4500-a224-ec9108f5e099" />)
+<img width="562" height="510" alt="lab2-topology drawio" src="https://github.com/user-attachments/assets/a420fec7-a47f-49ac-9f20-d539cead097d" />
 
 
 ### Настройка маршрутизаторов
