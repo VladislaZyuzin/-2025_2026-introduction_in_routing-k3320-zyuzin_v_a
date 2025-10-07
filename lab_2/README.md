@@ -122,10 +122,12 @@ ip route del default via 192.168.50.1 dev eth0
 
 Аналогичным образом на маршрутизаторе `R02` была показана таблица маршрутизации: 
 
+
 <img width="1474" height="1316" alt="2025-10-06_17-17-43" src="https://github.com/user-attachments/assets/0e95ffde-5a23-4298-adcc-1f8f32f745ac" />
 
 
 Проверка командой ping с `PC1` до `PC2` и `PC3` показала успешное прохождение пакетов:
+
 <img width="1158" height="411" alt="2025-10-06_17-15-11" src="https://github.com/user-attachments/assets/25eec961-8ec8-4fb8-b6aa-7b130f534773" />
 
 ## Заключение
